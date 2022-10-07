@@ -1,0 +1,57 @@
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 26px;
+}
+
+.flex-container {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+.flex-container div{
+    background-color: rgb(255, 68, 68);
+    border: 2px solid black;
+    height: 100px;
+    flex-basis: 100px;
+}
+
+.no-middle {
+    flex-grow: 1;
+}
+
+.middle {
+    background-color: rgb(47, 47, 255)!important;
+    flex-grow: 2;
+}
+
+.mobile {
+    width: 100%;
+    background-color: rgb(169, 78, 255);
+    font-size: 1.5em;
+    display:  flex;
+    font-size: 3em;
+}
+
+.half{
+    border: 2px solid black;
+    width: 50%;
+}
+
+@media only screen and (max-width:600px) {
+    .mobile {
+        background-color: rgb(12, 12, 158);
+    }
+}
+
+@media only print {
+    header {
+        display: none;
+    }
+}
